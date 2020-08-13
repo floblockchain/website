@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>
+<html class="ie ie9 no-js" lang="en">
+   <![endif]-->
+   <!--[if gt IE 9 | !IE]><!-->
+   <html class="no-js" lang="en">
+      <!--<![endif]-->
+      <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>FLO - Build Blockchain Applications</title>
+         <meta name="description" content="Build Blockchain Applications">
+         <meta name="keywords" content="blockchain, metadata, api, sdk">
+         <meta name="author" content="FLO">
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+         <link rel="apple-touch-icon" href="">
+         <link rel="icon" href="static/assets/img/favicon-v2.png"/>
+
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@floblockchain">
+<meta name="twitter:creator" content="@floblockchain">
+<meta name="twitter:title" content="FLO Dapps">
+<meta name="twitter:description" content="Dapps using the FLO blockchain">
+<meta name="twitter:image" content="https://flo.cash/flo_dapps_flo_greeting.png">
+
+
+
+
+
+
+         <link rel="stylesheet" href="static/assets/css/style.min.c928158a.css"/>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+         <script type="text/javascript" src="static/assets/js/all.min.js"></script>
+         <script src="static/assets/js/home.min.js"></script>
+         <!-- <script src="static/assets/js/pricefeed.js"></script> -->
+         <!--[if lte IE 9]><!-->
+         <script src='static/assets/js/html5shiv.min.js'></script>
+         <!--<![endif]-->
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110994620-1"></script>
+         <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110994620-1');
+         </script>
+
+
+
+<script type="text/javascript">void 0===window.console&&(window.console={log:function(){}})</script>
+<script src="static/assets/js/carousel.js"></script>
+<link rel='stylesheet' id='parent-style-css'  href='static/assets/css/roadmap_style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rgs-css'  href='static/assets/css/rgs-ver=8.5.4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='static/assets/css/responsive-ver=8.5.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='skin-material-css'  href='static/assets/css/skin-material-ver=8.5.4.css' type='text/css' media='all' />
+<style type="text/css" data-type="vc_custom-css">
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*#roadmap {
+  font-family: 'Muli', sans-serif !important;
+  box-sizing: border-box !important;
+}*/
+
+#roadmap h1, h2 {
+  font-weight: 900 !important;
+  color: #646f79 !important;
+}
+
+#roadmap h3, h5 {
+  font-weight: 400;
+  color: #646f79 !important;
+}
+
+#roadmap h3 {
+  font-size: 24px !important;
+}
+
+#roadmap h4 {
+    font-size: 15px !important;
+    font-weight:700 !important;
+    color: #646f79 !important;
+    line-height: 32px;
+}
+
+#roadmap p {
+  color: #646f79;
+  font-size: 15px !important;
+  line-height: 27px;
+}
+
+#roadmap h2 {
+  font-size: 48px !important;
+  text-align: center !important;
+  margin-top: 100px !important;
+  margin-bottom: 30px !important;
+}
+
+#roadmap h2 + p {
+  margin: 20px 0px !important;
+}
+
+#roadmap .title-box {
+  text-align: center !important;
+}
+
+#roadmap .title-box h3 {
+  width: 63% !important;
+  margin: auto !important;
+  text-align: left !important;
+  margin-bottom: 30px !important;
+  padding-top: 60px !important;
+}
+
+/*
+ *  Content rows
+ */
+
+.content-row {
+  display: flex !important;
+  flex-flow: row wrap !important;
+}
+
+.content-row + .content-row {
+  margin-top: 60px !important;
+}
+
+.content-row .side-text {
+  width: 30% !important;
+  margin-top: 40px !important;
+  min-width: 280px !important;
+}
+
+.content-row img {
+  width: 42% !important;
+  min-width: 320px !important;
+}
+
+.content-row.align-left img {
+  margin-right: 7em !important;
+}
+
+.content-row.align-right img {
+  margin-left: 7em !important;
+}
+
+.align-left {
+  justify-content: flex-start !important;
+}
+
+.align-right {
+  justify-content: flex-end !important;
+  text-align: right !important;
+}
+
+/*
+ *  Box containers
+ */
+
+#roadmap .title-box + .box-container {
+  margin-top: 80px !important;
+}
+
+#roadmap .content-box,
+#roadmap .items-list div {
+  background-color: #FFFFFF !important;
+  width: 63% !important;
+  margin: auto !important;
+  border: 1px solid rgba(173, 173, 173, .18) !important;
+  box-shadow: 0px 2px 29px 0px rgba(0, 0, 0, .06) !important;
+  margin-bottom: -1px !important;
+  background-color: #FFFFFF !important;
+}
+
+#roadmap .content-box:first-child {
+  min-height: 75px !important;
+}
+
+#roadmap .content-box:not(:first-child):not(.list-items) {
+  min-height: 40px !important;
+}
+
+#roadmap .content-box {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  justify-content: space-around !important;
+}
+
+#roadmap .box-container {
+  margin-bottom: 20px !important;
+}
+
+#roadmap .content-box .text-box {
+  width: 60% !important;
+}
+
+#roadmap .content-box .detail-box {
+  width: 40% !important;
+}
+
+#roadmap .content-box:not(:first-child) {
+  margin-top: 0px !important;
+  /*margin-left: 17% !important;*/
+  left: -1px !important;
+  width: 61% !important;
+  justify-content: space-around !important;
+  flex-flow: column nowrap !important;
+  position: relative !important;
+  z-index: -1 !important;
+}
+
+#roadmap .content-box:not(:first-child).done::after {
+  content: ""  !important;
+  background-image: url("static/assets/img/finished.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 0px 0px !important;
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -15px !important;
+  right: 10% !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+
+#roadmap .content-box:not(:first-child).in-progress h4::after {
+  content: "IN PROGRESS" !important; 
+/*  font-family: 'Muli', sans-serif !important;*/
+  color: rgb(45, 199, 164) !important;
+  font-size: 15px !important;
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -8px !important;
+  right: 60px !important;
+  text-align: right !important;
+}
+
+#roadmap .content-box:not(:first-child).to-do::after,
+#roadmap .content-box:not(:first-child).in-progress::after,
+#roadmap .content-box:not(:first-child).done::after {
+  right: 24px !important;
+  text-align: right !important;
+}
+
+#roadmap .content-box:not(:first-child).to-do::after,
+#roadmap .content-box:not(:first-child).in-progress::after {
+  content: "" !important;
+  height: 22px !important;
+  width: 22px !important;
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -13px !important;
+  border: 2px solid rgba(65, 98, 117, .20) !important;
+  border-radius: 50% !important;
+}
+
+#roadmap .box-container:not(.expanded) .content-box:not(:first-child) {
+  display: none !important;
+}
+
+#roadmap .content-box .text-box:not(.text-only) {
+  border-right: 1px solid rgba(65, 98, 117, .20) !important;
+  position: relative !important;
+}
+
+#roadmap .content-box .text-box.text-only {
+  width: 100% !important;
+}
+
+#roadmap .content-box .text-box {
+  position: relative !important;
+  padding: 10px;
+}
+
+#roadmap .content-box .text-box.text-only p,
+#roadmap .content-box .text-box.text-only h4 {
+  width: 80% !important;
+}
+
+#roadmap .content-box:first-child .text-box * {
+  margin: 2px 40px !important;
+}
+
+#roadmap .content-box:not(:first-child) * {
+  margin: 4px 40px !important;
+}
+
+#roadmap .content-box:not(:first-child) p {
+  margin-bottom: 10px !important;
+  width: 60% !important;
+}
+
+#roadmap .box-container.expanded .content-box .text-box h4::before {
+  content: "--" !important;
+  letter-spacing: -7px !important;
+  position: absolute !important;
+  top: -1px !important;
+  left: 16px !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  color: #646f79 !important;
+}
+
+#roadmap .box-container.collapsed .content-box .text-box h4::before {
+  content: "+" !important;
+  position: absolute !important;
+  top: 10px !important;
+  left: 16px !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  color: #646f79 !important;
+}
+
+#roadmap .box-container .content-box .text-box p:nth-child(3) {
+  margin-bottom: 20px !important;
+}
+
+#roadmap .box-container .content-box .text-box.collapsed p:nth-child(3) {
+  display: none !important;
+}
+
+#roadmap .box-container .content-box .text-box.collapsed p:nth-child(2):after {
+  /*content: "Show more" !important;*/
+  display: block !important;
+  left: 20px !important;
+  font-weight: 700 !important;
+  margin-top: 10px !important;
+  color: rgb(90, 48, 241) !important;
+}
+
+#roadmap .box-container .content-box .text-box.expanded p:nth-child(3):after {
+  content: "Show less" !important;
+  display: block !important;
+  left: 20px !important;
+  font-weight: 700 !important;
+  margin-top: 10px !important;
+  color: rgb(90, 48, 241) !important;
+}
+
+#roadmap .content-box .text-box:not(.text-only)::after {
+  content: ""  !important;
+  background-color: white !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  z-index: 9999 !important;
+  position: absolute !important;
+  top: -4px !important;
+  right: -5px !important;
+  height: 7px !important;
+  width: 7px !important;
+  border: 1px solid rgba(65, 98, 117, .20) !important;
+  border-radius: 50% !important;
+}
+
+
+
+
+#roadmap .content-box .detail-box {
+  position: relative !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  flex-flow: column nowrap !important;
+}
+
+#roadmap .content-box .detail-box::before {
+  content: "" !important;
+  z-index: -9999 !important;
+  width: 1px !important;
+  height: 20px !important;
+  position: absolute !important;
+  top: -20px !important;
+  left: -1px !important;
+  background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF) !important;
+  background-position: 0, 100%, 0, 100% !important;
+}
+
+/*
+ *  Progress bar
+ */
+
+#roadmap .progress-bar {
+  width: 100% !important;
+  margin-top: 12px !important;
+  margin-left: 15px !important;
+}
+
+#roadmap .progress-bar::before,
+#roadmap .resources::before {
+  font-size: 14px !important;
+}
+
+#roadmap .progress-bar::before {
+  content: "Progress" !important;
+  color: #646f79 !important;
+  text-transform: uppercase !important;
+  font-weight: 400;
+/*  font-family: 'Muli', sans-serif !important;*/
+  position: relative !important;
+  top: -6px !important;
+}
+
+#roadmap .progress-bar > div {
+  width: 90% !important;
+  background-color: rgba(65, 98, 117, .2) !important;
+  border-radius: 13px !important;
+}
+
+#roadmap .progress-bar > div > div:not(.progress-bar-label) {
+  height: 10px !important;
+  border-radius: 10px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  position: relative !important;
+}
+
+/*
+ *  Progress bar labels
+ */
+
+#roadmap .progress-bar .progress-bar-label {
+  height: 16px !important;
+}
+
+#roadmap .progress-bar .progress-bar-label {
+  position: absolute !important;
+  top: 0px !important;
+  z-index: 19999 !important;
+  border-radius: 0px !important;
+  margin: auto !important;
+}
+
+#roadmap .progress-bar .progress-bar-label:not(.left-label) {
+  border-right: 2px solid #23245B !important;
+}
+
+#roadmap .progress-bar .progress-bar-label:not(.label-up) {
+  top: 0px !important;
+}
+
+#roadmap .progress-bar .progress-bar-label.label-up {
+  top: -6px !important;
+}
+
+#roadmap .progress-bar span {
+  color: #646f79 !important;
+/*  font-family: 'Muli', sans-serif !important;*/
+  text-transform: uppercase !important;
+  position: absolute !important;
+  margin: auto !important;
+  font-size: 12px !important;
+}
+
+#roadmap .progress-bar span:not(.label-up) {
+  top: 18px !important;
+}
+
+#roadmap .progress-bar span.label-up {
+  margin-top: -32px !important;
+}
+
+
+/*
+ *  Items list
+ */
+
+#roadmap .items-list * {
+  margin: 10px 40px !important;
+}
+
+#roadmap .items-list h4 {
+  width: 60% !important;
+}
+
+#roadmap .items-list div {
+  position: relative !important;
+}
+
+#roadmap .items-list div::before {
+  content: "" !important;
+  background-image: url("static/assets/img/lock.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: 0px 0px !important;
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+/*
+ *  Resources
+ */
+
+#roadmap .resources {
+  width: 60% !important;
+  margin-left: 15px !important;
+  margin-top: 40px !important;
+}
+
+#roadmap .resources > div {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  margin-bottom: 10px !important;
+}
+
+#roadmap .resources > div > a > img {
+  height: 24px !important;
+  width: auto !important;
+  margin-right: 7px !important;
+}
+
+#roadmap .resources::before {
+  content: "Resources" !important;
+  color: #646f79 !important;
+  text-transform: uppercase !important;
+  font-weight: 400;
+/*  font-family: 'Muli', sans-serif !important;*/
+  position: relative !important;
+  top: -4px !important;
+  display: block !important;
+}
+
+/*
+ *  Media queries
+ */
+
+@media screen and (max-width: 744px) {
+  #roadmap .content-row .side-text,
+  #roadmap .content-row img,
+  #roadmap .content-row img + #roadmap .content-row .side.text,
+  #roadmap .content-row .side-text + #roadmap .content-row img {
+    width: 80% !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  #roadmap .content-box:not(:first-child)::after {
+    display: none !important;
+  }
+
+  #roadmap .content-box:first-child {
+    flex-flow: column wrap !important;
+    width: 100% !important;
+    padding-bottom: 40px !important;
+  }
+
+  #roadmap .content-box:not(:first-child) {
+    margin: -1px 0px 0px 0px !important;
+    left: 5% !important;
+    width: 95% !important;
+    padding: 20px 10px !important;
+  }
+
+  #roadmap .content-box:not(:first-child) * {
+    width: 90% !important;
+    margin: auto !important;
+    padding: 5px 0px !important;
+  }
+
+  #roadmap .content-box .text-box,
+  #roadmap .content-box .detail-box {
+    width: 100% !important;
+  }
+
+  #roadmap .progress-bar {
+    margin-top: 30px !important;
+  }
+}
+
+/*@media only screen and (min-width: 1000px) {
+.container
+{
+max-width: 1425px;	
+}
+}*/
+
+</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1529517859537{padding-right: 5% !important;padding-left: 5% !important;}</style><noscript><style type="text/css">.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+
+      </head>
+      <body class="is-site-bg-img is-site-bg-particles is-loaded is-scroll">
+<!--          <div class="site">
+            <div class="site-loader">
+               <div class="site-loader-spinner"></div>
+            </div> -->
+            <!-- .site-loader -->
+            <div class="site-canvas" style="background:#f6f8f9;">
+               <header class="site-header" style="background:#212121">
+                  <nav class="navbar navbar-theme">
+                     <div class="container" style="max-width:1440px;">
+                        <div class="navbar-header">
+                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                              aria-expanded="false">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           </button>
+                           <div class="navbar-brand-wrap">
+                              <a class="navbar-brand" href="">
+                              <img src="static/assets/img/logo-with-name-v2.png" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- .navbar-header -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                           <ul class="nav navbar-nav navbar-right">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="dapps.html">Dapps</a></li>
+                              <li><a href="http://network.flo.cash/">Network</a></li>
+                              <li class="active"><a href="#">Roadmap</a></li>
+                              <li><a href="docs/index.html" class="js-analytic">Docs</a></li>
+                              <!-- <li><a href="docs/index.html" class="js-analytic">Roadmap</a></li> -->
+                              <li><a href="https://medium.com/floblockchain">Blog</a></li>       
+                              <li><a href="https://forum.flo.cash" class="js-analytic">Forum</a></li>
+                              <!-- <li><a href="https://medium.com/flo-cash">News</a></li> -->
+
+                              <li><script type="text/javascript" src="static/assets/js/pricefeed.js"></script><a href="https://coinmarketcap.com/currencies/florincoin/" target="_blank"><div id="buttonOne"><div class="coinmarketcap-currency-widget" style="" data-currency="florincoin" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></li></a>
+
+
+
+                           </ul>
+                        </div>
+                        <!-- .navbar-collapse -->
+                     </div>
+                  </nav>
+
+
+               </header>
+
+
+
+<div class="container-wrap">
+	
+	<div class="container main-content" style="">
+		
+		<div class="row">
+			
+			
+<!-- 		<div id="fws_5b8817c152584"  data-midnight="light" data-bg-mobile-hidden="" class="wpb_row vc_row-fluid vc_row full-width-section standard_section   "  style="padding-top: 3%; padding-bottom: 12%; margin-top:60px!important;"><div class="row-bg-wrap"><div class="inner-wrap"> <div class="row-bg    "  style="" data-color_overlay="#40ceff" data-color_overlay_2="#5a2ff1" data-gradient_direction="left_to_right" data-overlay_strength="1" data-enable_gradient="true"></div></div> </div><div class="nectar-shape-divider-wrap " style=" height:350px;" data-front="" data-style="mountains" data-position="bottom" ><svg class="nectar-shape-divider" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">  
+
+</div></div> -->
+		<div id="fws_5b8817c152b34"  data-midnight="dark" data-bg-mobile-hidden="" class="wpb_row vc_row-fluid vc_row full-width-content standard_section   "  style="padding-top: 200px; padding-bottom: 40px; "><div class="row-bg-wrap"><div class="inner-wrap"> <div class="row-bg    "  style="" data-color_overlay="" data-color_overlay_2="" data-gradient_direction="" data-overlay_strength="0.3" data-enable_gradient="false"></div></div> </div><div class="col span_12 dark left">
+	<div  class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"  data-border-radius="none" data-shadow="none" data-border-animation="" data-border-animation-delay="" data-border-width="none" data-border-style="solid" data-border-color="" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+		<div class="wpb_wrapper">
+			<!DOCTYPE html>
+<html lang="en-US">
+  <body>
+    <div id="roadmap">
+        <div class="title-box">
+        <h3 style="text-align: center!important; color: rgba(0,0,0,.54);font-size:28px!important;padding-bottom:30px;font-weight: 600;padding-top: 20px !important;">FLO Blockchain Roadmap</h3>
+      </div>
+      <div id="platform-roadmap">
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>Defense against the 51% Attack</h4>
+              <p>The FLO 0.15.1.1 update released on October 8th has mitigated the chances of a 51% attack, please make sure your client is up-to-date with the most recent version:
+              <a href="https://github.com/floblockchain/flo/releases/" style="margin:0!important;"> github.com/floblockchain/flo/releases/</a></p>
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">1</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+                  <a href="https://github.com/floblockchain/flo/releases/" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a>
+                  <a href="https://flo.cash" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>FLO Foundation</h4>
+              <p>The mission of the Flo Foundation is to promote the The Flo network as a worldwide record for storing information, and its support for decentralized applications that provide digital public spaces for the internet.</p>
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">1</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>          
+              <div class="resources">
+                <div>
+                  <a href="http://flo.foundation" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-box done">
+            <h4>Domain Extension</h4>
+            <p>The web domain "flo.foundation" has been registered succesfully and will be used for accessing all the foundation content in the future</p>
+          </div>
+          <div class="content-box done">
+            <h4>Registration</h4>
+            <p>The FLO Foundation Ltd. has been successfully registered in Hong Kong </p>
+          </div>
+          <div class="content-box in-progress">
+            <h4>Website Development</h4>
+            <p>We started developing a new interface for the flo.foundation web domain.</p>
+          </div>
+        </div>
+
+<!--         <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>Forking Omni Layer Protocol to FLO</h4>
+              <p>The team is planning on launching a smart contract protocol for the FLO Blockchain. The project called FloCraft will utilize the increased data-carrier-size and OP_Return transactions alongside a protocol based on the Omni Layer project.
+
+</p>
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">.25</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+                  <a href="http://flocraft.org" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>                	
+                  <a href="https://github.com/floblockchain" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-box done">
+            <h4>Domain Extension</h4>
+            <p>The web domain "flocraft.org" has been registered succesfully and will be used for accessing all the FloCraft related content.</p>
+          </div>
+          <div class="content-box in-progress">
+            <h4>Development</h4>
+            <p>The forking process has started. The final specs and the time will be updated soon.</p>
+          </div>
+        </div> -->
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>Website Development</h4>
+              <p>Here you can track all the progress on the website development.</p>
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">.85</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+                  <a href="https://flo.cash" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-box done">
+            <h4>Roadmap</h4>
+            <p> We are working on a roadmap to showcase the future implementations.</p>
+          </div>
+          <div class="content-box in-progress">
+            <h4>Resources</h4>
+            <p>This page will contain the "press release" media kit, FLO paper wallet, downloads and more.</p>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>FLO Electrum Wallet</h4>
+              <p>Alternative implementation of spesmilo/electrum-server for FLO blockchain developed by Ranchi Mall
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">.85</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+                  <a href="https://github.com/ranchimall/electrumx" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>FLO SDK</h4>
+              <p>FLO Blockchain Software Development Kit to make dapp development on the platform easier and faster</p>
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">.50</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+                  <a href="https://github.com/floblockchain/flo-python-sdk" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a>
+                  <a href="https://forum.flo.cash/t/flo-sdk-development-thread/" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="title-box">
+        <h3>FLO Foundation-Funded initiatives</h3>
+      </div>
+
+<!--       <div class="items-list">
+        <div>
+          <h4>Rebranded to FLO</h4>
+        </div>
+
+      </div> -->
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>FLO Mobile Wallet</h4>
+              <p>Creating new wallets is a priority for the FLO team because it will allow users to manage their FLO coins without having to download the Qt client and validate the entire blockchain. <a href='http://flo.foundation/mobile-wallet' target="_blank" style="margin:0!important;">[Status: Waiting for funding. Donate at flo.foundation/mobile-wallet]</a>
+             
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">0</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>
+              <div class="resources">
+                <div>
+<!--                   <a href="https://github.com/floblockchain/flo/releases/" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a> -->
+                  <a href="http://flo.foundation/mobile-wallet" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>FLO Trezor Support</h4>
+              <p>Work has already been done on the Trezor wallet, but to ensure we get ongoing support, let’s help the Alexandria team develop and maintain the Trezor wallet for FLO! <a href='http://flo.foundation/trezor-support/' target="_blank" style="margin:0!important;">[Status: Waiting for funding. Donate at flo.foundation/trezor-support/]
+              
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">0.25</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+                  <a href="https://github.com/oipwg/trezor-common" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a>
+                  <a href="http://flo.foundation/mobile-wallet" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="content-box">
+            <div class="text-box">
+              <h4>FLO Blockchain Twitter Bot</h4>
+              <p>Twitter bot scanning the FLO blockchain for interesting floData and notable blocks, such as halving blocks, difficulty adjustments reflecting hashrate changes, OIP records and artifacts with media, and much more! <a href='http://flo.foundation/initiatives/flo-blockchain-twitter-bot/' target="_blank" style="margin:0!important;">[Status: Waiting for funding. Donate at flo.foundation/initiatives/flo-blockchain-twitter-bot/]
+            </div>
+            <div class="detail-box">
+              <div class="progress-bar">0</div>
+              <div class="progress-bar-label">.25, 25%</div>
+              <div class="progress-bar-label">.50, 50%</div>
+              <div class="progress-bar-label">.75, 75%</div>     
+              <div class="resources">
+                <div>
+<!--                   <a href="http://flo.foundation/initiatives/flo-blockchain-twitter-bot/" target="_blank">
+                    <img alt="github" src="static/assets/img/github.svg">
+                  </a> -->
+                  <a href="http://flo.foundation/initiatives/flo-blockchain-twitter-bot/" target="_blank">
+                    <img alt="link" src="static/assets/img/link.svg">
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!--       <div class="title-box">
+        <h3>2017</h3>
+      </div>
+
+      <div class="items-list">
+        <div>
+          <h4>Rebranded to FLO</h4>
+        </div>
+
+      </div> -->
+
+<script>
+// Make items expandable
+Array.from(document.querySelectorAll(".box-container"))
+  .filter(element => element.children.length > 1)
+  .forEach(element => {
+    element.classList.add("collapsed");
+    const elementToListen = element.children[0].children[0].children[0];
+    elementToListen.style.cursor = "pointer";
+    elementToListen.addEventListener("click", () => {
+      const curElemPosition = elementToListen.getBoundingClientRect().top;
+      if (element.classList.contains("collapsed")) {
+        element.classList.remove("collapsed");
+        element.classList.add("expanded");
+      } else {
+        element.classList.remove("expanded");
+        element.classList.add("collapsed");
+      }
+      const newElemPosition = elementToListen.getBoundingClientRect().top; 
+      if (curElemPosition !== newElemPosition) {
+        document.documentElement.scrollTop = document.body.scrollTop = document.documentElement.scrollTop + (newElemPosition - curElemPosition);
+      }
+    });
+  });
+
+// Make item descriptions expandable
+Array.from(document.querySelectorAll(".text-box"))
+  .filter(element => element.children.length > 2)
+  .forEach(element => {
+    const shortDesc = element.children[1].innerHTML.slice();
+    const longDesc = element.children[2].innerHTML.slice();
+    element.children[1].style.cursor = "pointer";
+    element.children[2].style.cursor = "pointer";
+    element.classList.add("collapsed");
+    const handleDescClick = () => {
+      if (element.classList.contains("collapsed")) {
+        element.classList.add("expanded");
+        element.classList.remove("collapsed");
+      } else {
+        element.classList.add("collapsed");
+        element.classList.remove("expanded");
+      }
+    };
+    element.children[1].addEventListener("click", handleDescClick);
+    element.children[2].addEventListener("click", handleDescClick);
+  });
+
+// Create progress bars for each detail-box
+Array.from(document.querySelectorAll(".progress-bar"))  
+  .forEach(element => {
+    const value = element.innerHTML;
+    element.innerHTML = "";
+    const background = document.createElement("div");
+    background.style.position = "relative";
+    const bar = document.createElement("div");
+    if (value < .4) {
+      bar.style.backgroundColor = "#C057DB";
+    } else if (value < .6) {
+      bar.style.backgroundColor = "#3772FF";
+    } else if (value < .8) {
+      bar.style.backgroundColor = "#5A30F1";
+    } else if (value < 1) {
+      bar.style.backgroundColor = "#4F9F9F";
+    } else {
+      bar.style.backgroundColor = "#31DFB7";
+      bar.style.borderTopRightRadius = bar.style.borderBottomRightRadius = "13px";
+    }
+    bar.style.width = `${value*100}%`;
+    background.append(bar);
+    element.append(background);
+    // Create any labels for the progress bar
+    const labels = [];
+    let label = element.nextSibling;
+    while (label) {
+      if (label.classList && label.classList.contains("progress-bar-label")) {
+        labels.push(label);
+      }
+      label = label.nextSibling;
+    }
+    if (labels.length) {
+      labels.forEach(label => {
+        [labelValue, tag] = label.innerHTML.split(",");
+        label.innerHTML = "";
+        label.style.width = `${labelValue*100}%`;
+        element.firstChild.append(label);
+        if (tag) {
+          const textLabel = document.createElement("span");
+          textLabel.innerHTML = tag;
+          if (label.classList.contains("label-up")) {
+            textLabel.classList.add("label-up");
+          }
+          if (label.classList.contains("left-label")) {
+            textLabel.classList.add("left-label");
+            if (tag.trim() === "In progress") {
+              textLabel.style.color = "#2DC7A4";
+            }
+          }
+          textLabelStyle = window.getComputedStyle(textLabel);
+          element.firstChild.append(textLabel);
+          if (!label.classList.contains("left-label")) {
+            textLabel.style.marginLeft = `-${parseInt(window.getComputedStyle(textLabel).getPropertyValue("width"))/2}px`;
+          }
+          textLabel.style.left = `${labelValue*100}%`;
+        }
+      });
+    }
+  }); </script>
+		</div>
+	</div>
+
+			</div> 
+		</div>
+	</div> 
+</div></div>
+
+		</div><!--/row-->
+		
+	</div><!--/container-->
+	
+</div><!--/container-wrap-->
+
+
+
+               <section class="section-community">
+                  <div class="containercom">
+                     <div class="col-sm-3 col-md-2">
+                        <h6>Community</h6>
+                     </div>
+                     <div class="col-md-10 col-sm-9">
+                        <ul>
+                        
+                           <li class="fadeIn wow" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"> <a href="https://t.me/FLOblockchain" title="Telegram" target="_blank"><img src="static/assets/img/icon-telegram-smaller.svg" alt="Telegram" class="img-responsive"></a> </li>
+
+
+
+                           <li class="fadeIn wow" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <a href="https://twitter.com/FLOblockchain" title="Twitter" target="_blank"><img src="static/assets/img/social-twitter.svg" alt="Twitter" class="img-responsive"></a> </li>                           
+                           <li class="fadeIn wow" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <a href="https://www.facebook.com/floblockchain" title="Facebook" target="_blank"><img src="static/assets/img/social-facebook.svg" alt="Facebook" class="img-responsive"></a> </li>
+
+
+
+                           <li class="fadeIn wow" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <a href="https://www.reddit.com/r/floblockchain/" title="Reddit" target="_blank"><img src="static/assets/img/social-reddit.svg" alt="Twitter" class="img-responsive"></a> </li>
+
+                           <li class="fadeIn wow" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"> <a href="https://www.youtube.com/channel/UCDAELSdJelys5VkE1FuXo2A" title="Youtube" target="_blank"><img src="static/assets/img/social-youtube.svg" alt="Medium" class="img-responsive"></a> </li>
+
+                           <li class="fadeIn wow" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"> <a href="https://medium.com/flo-cash" title="Medium" target="_blank"><img src="static/assets/img/social-medium.svg" alt="Medium" class="img-responsive"></a> </li>                           
+ 
+                            <li class="fadeIn wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;"> <a href="https://florincoin.slack.com/shared_invite/MTgzNDk0MzYxMjY5LTE0OTQ4MTgzMDEtNGIwYzI4NjkwNw" title="Slack" target="_blank"><img src="static/assets/img/social-slack.png" alt="Slack" class="img-responsive"></a> </li>
+
+                           <li class="fadeIn wow" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <a href="https://github.com/floblockchain" title="Github" target="_blank"><img src="static/assets/img/social-github.svg" alt="Github" class="img-responsive"></a> </li>
+                        </ul>
+                     </div>
+                  </div>
+               </section>
+
+
+
+               <!-- .site-header -->
+
+               <footer class="site-footer block-invert">
+                  <div class="container">
+                     <img class="site-footer-logo img-responsive" src="static/assets/img/logo-v1.png" data-sr="bottom">
+                     <p class="site-footer-copyright">2013-2019 &copy; <a href="#home">FLO</a> | All Rights Reserved.</p>
+                  </div>
+               </footer>
+               <!-- .site-footer -->
+            </div>
+         </div>
+         <script type="text/javascript" src="static/assets/js/script.min.8cf8fe3e.js"></script>
+         <script src='static/assets/js/scripts.js'></script>
+
+         <script type='text/javascript' src='static/assets/js/modernizr-ver=2.6.2.js'></script>
+		<script type='text/javascript' src='static/assets/js/jquery.fancybox.min-ver=7.0.1.js'></script>
+		<script type='text/javascript' src='static/assets/js/superfish-ver=1.4.8.js'></script>
+		<script type='text/javascript' src='static/assets/js/init-ver=8.5.5.js'></script>
+		
+
+
+
+
+      </body>
+   </html>

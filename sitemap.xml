@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://flo.cash/</loc>
+  <lastmod>2019-01-24T21:59:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://flo.cash/dapps.html</loc>
+  <lastmod>2019-01-17T11:47:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flo.cash/roadmap.html</loc>
+  <lastmod>2019-01-25T00:07:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/index.html</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flo.cash/index.html</loc>
+  <lastmod>2019-01-24T21:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/.</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/getting-started/obtaining-flo/</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/getting-started/user-guides/flo-setup/</loc>
+  <lastmod>2019-01-08T20:41:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/building-dapps/flotorizer.net/</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/support-directory/</loc>
+  <lastmod>2018-10-24T20:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/getting-started/obtaining-flo/index.html</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/getting-started/user-guides/flo-setup/index.html</loc>
+  <lastmod>2019-01-08T20:41:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/building-dapps/flotorizer.net/index.html</loc>
+  <lastmod>2018-10-24T20:11:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://flo.cash/docs/support-directory/index.html</loc>
+  <lastmod>2018-10-24T20:11:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,15 @@
+drwxr-xr-x    2 juan       juan             4096 Dec 22  2017 .
+drwxr-xr-x    3 juan       juan             4096 Dec 22  2017 ..
+-rw-r--r--    1 juan       juan             7424 Jul 26  2018 AMS-Regular.js
+-rw-r--r--    1 juan       juan             2036 Jul 26  2018 Caligraphic-Bold.js
+-rw-r--r--    1 juan       juan             3114 Jul 26  2018 Fraktur-Bold.js
+-rw-r--r--    1 juan       juan             3119 Jul 26  2018 Fraktur-Regular.js
+-rw-r--r--    1 juan       juan             5418 Jul 26  2018 Main-Bold.js
+-rw-r--r--    1 juan       juan             3975 Jul 26  2018 Math-BoldItalic.js
+-rw-r--r--    1 juan       juan             3728 Jul 26  2018 SansSerif-Bold.js
+-rw-r--r--    1 juan       juan             3739 Jul 26  2018 SansSerif-Italic.js
+-rw-r--r--    1 juan       juan             3697 Jul 26  2018 SansSerif-Regular.js
+-rw-r--r--    1 juan       juan             1774 Jul 26  2018 Script-Regular.js
+-rw-r--r--    1 juan       juan             3795 Jul 26  2018 Typewriter-Regular.js
+-rw-r--r--    1 juan       juan             4178 Jul 26  2018 fontdata-extra.js
+-rw-r--r--    1 juan       juan            37647 Jul 26  2018 fontdata.js

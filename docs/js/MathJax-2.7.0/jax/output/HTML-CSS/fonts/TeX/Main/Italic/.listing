@@ -1,0 +1,7 @@
+drwxr-xr-x    2 juan       juan             4096 Dec 22  2017 .
+drwxr-xr-x    5 juan       juan             4096 Dec 22  2017 ..
+-rw-r--r--    1 juan       juan             1171 Jul 26  2018 CombDiacritMarks.js
+-rw-r--r--    1 juan       juan             1068 Jul 26  2018 GeneralPunctuation.js
+-rw-r--r--    1 juan       juan              913 Jul 26  2018 Latin1Supplement.js
+-rw-r--r--    1 juan       juan              922 Jul 26  2018 LetterlikeSymbols.js
+-rw-r--r--    1 juan       juan             3582 Jul 26  2018 Main.js

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="42px" viewBox="0 0 33 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Roadmap-v4" transform="translate(-1302.000000, -5221.000000)" stroke="#23245B" stroke-width="2">
+            <g id="POST-RELEASE" transform="translate(215.000000, 4999.000000)">
+                <g id="lock" transform="translate(1088.000000, 223.000000)">
+                    <path d="M0.339228571,19.0676044 L0.238788571,36.3108571 C0.238788571,38.379956 1.93351429,40 4.01547429,40 L26.9317371,40 C29.0138743,40 30.7093086,38.3467253 30.7093086,36.2776264 L30.6088686,19.0533626 C30.6088686,16.9867253 28.9134343,15.3846154 26.8312971,15.3846154 L4.11591429,15.3846154 C2.03377714,15.3846154 0.339228571,17.000967 0.339228571,19.0676044 Z" id="Shape"></path>
+                    <path d="M17.4508743,32.967033 L13.4979314,32.967033 L12.7539314,26.8887912 C12.7539314,25.424 13.9719657,24.264967 15.4716571,24.264967 C16.9738286,24.264967 18.1927486,25.4090549 18.1927486,26.8736703 L17.4508743,32.967033 L17.4508743,32.967033 Z" id="Shape"></path>
+                    <path d="M7.50448,15.3846154 L7.50448,7.53687912 C7.50448,3.46285714 11.2719543,0.148043956 15.47644,0.148043956 C19.6832286,0.148043956 23.4473371,3.46285714 23.4473371,7.53687912 L23.4473371,15.3846154" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

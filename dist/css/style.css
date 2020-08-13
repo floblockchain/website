@@ -1,0 +1,1544 @@
+/* TABLE OF COONTENTS ************************
+    1. GLOBAL STYLES
+    2. HOMEPAGE STYLE
+    3. OTHER PAGES STYLE
+    4. COUNTDOWN
+    5. SUBSCRIBE DIALOG
+    6. GOOGLEMAP
+    7. CONTACT PAGE
+    8. BOTTOM SOCIAL MEDIA
+    9. CONTACT FORM
+    10. BACK TO TOP BUTTON
+    11. TOP SOCIAL MEDIA LINKS
+    12. TEXT ANIMATION
+    13. SPINNER - LOADING ANIMATION
+    14. OVERLAY SETTINGS
+        14.1. Overlay None
+        14.2. Overlay - Color
+        14.3. Overlay - Gradient
+        14.4. Overlay - Dotted
+    15. COLOR SETTINGS
+        15.1. Blue
+        15.2. Red
+        15.3. Green
+        15.4. Yellow
+        15.5. Purple
+        15.6. Orange
+    15. RESPONSIVE STYLES
+**********************************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&subset=latin-ext');
+.gradientBackground {
+  background: #15faff;
+  background: -moz-linear-gradient(-45deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  background: -webkit-linear-gradient(-45deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  background: linear-gradient(135deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15faff', endColorstr='#ffc043', GradientType=1);
+}
+/* --------------------------------
+    1. GLOBAL STYLES
+-------------------------------- */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.none {
+  display: none;
+}
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+.btn {
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 auto;
+  width: auto;
+  height: 34px;
+  border-radius: 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+.btn i {
+  padding-left: 10px;
+}
+.btnGradient {
+  overflow: hidden;
+  position: relative;
+  background: rgba(21, 220, 255, 0.2);
+  background: -moz-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(21, 220, 255, 0.2)), color-stop(51%, rgba(255, 89, 136, 0.2)), color-stop(100%, rgba(255, 192, 67, 0.2)));
+  background: -webkit-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: -o-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: -ms-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: linear-gradient(to right, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15dcff', endColorstr='#ffc043', GradientType=1);
+  z-index: 99;
+}
+.btnGradient:hover,
+.btnGradient:focus {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btnGradient:hover:after {
+  left: 120%;
+}
+.btnGradient span {
+  z-index: 20;
+}
+.btnGradient:after {
+  background: #ffffff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+.gradientBackground {
+  background: #15faff;
+  background: -moz-linear-gradient(-45deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  background: -webkit-linear-gradient(-45deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  background: linear-gradient(135deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15faff', endColorstr='#ffc043', GradientType=1);
+}
+/* --------------------------------
+    2. HOMEPAGE STYLE
+-------------------------------- */
+#homePage {
+  position: relative;
+  height: 100%;
+  z-index: 99;
+}
+#homePage header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  padding-bottom: 15px;
+}
+#homePage header .logo img {
+  width: 209px;
+  height: auto;
+}
+#homePage .content {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#homePage .content .contentInner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 960px;
+  color: #ffffff;
+}
+#homePage .content .contentInner p.description {
+  font-size: 18px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 40px;
+}
+#homePage .content .contentInner h3 {
+  font-size: 26px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+}
+#homePage .content .buttons {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#homePage .content .buttons a {
+  margin-right: 5px;
+}
+.soundController {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.soundController a {
+  font-size: 20px;
+  color: #ffffff;
+}
+.soundController a.tubular-mute:before {
+  content: "\f028";
+  /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: FontAwesome;
+}
+.soundController a.tubular-on:before {
+  content: "\f026";
+  /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #ffffff;
+}
+.soundController a:hover,
+.soundController a:focus {
+  text-decoration: none;
+}
+.color {
+  background: #2b6786;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.gradientBg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+/*s*/
+/*  background: -moz-linear-gradient(-45deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  background: -webkit-linear-gradient(-45deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  background: linear-gradient(135deg, #15faff 0%, #ff5988 50%, #ffc043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15faff', endColorstr='#ffc043', GradientType=1);*/
+}
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+.particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+/* --------------------------------
+    3. OTHER PAGES STYLE
+-------------------------------- */
+#morePage {
+  z-index: 99;
+  height: auto;
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+}
+#morePage section {
+  padding: 70px 10px 70px 10px;
+}
+#morePage section h2 {
+  font-size: 33px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+#morePage section h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#morePage section p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+#morePage section p.title {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 2em;
+  font-weight: 400;
+  max-width: 600px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+#morePage section .cutter {
+  height: 15px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -21px;
+}
+/* --------------------------------
+    4. COUNTDOWN
+-------------------------------- */
+ul.countdown {
+  list-style: none;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+ul.countdown li {
+  display: inline-block;
+  padding: 14px;
+}
+ul.countdown li span {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ffffff;
+}
+ul.countdown li:first-child {
+  padding-left: 0;
+}
+ul.countdown li:first-child p {
+  font-weight: 300;
+  font-size: 15px;
+}
+ul.countdown li:first-child span {
+  font-size: 40px;
+  font-weight: 800;
+}
+ul.countdown li:last-child {
+  padding-right: 0;
+}
+ul.countdown p {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #ffffff;
+}
+/* --------------------------------
+    5. SUBSCRIBE DIALOG
+-------------------------------- */
+.dialog {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 500px;
+  height: auto;
+  padding: 2px;
+  background: #15dcff;
+  background: -moz-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #15dcff), color-stop(51%, #ff5988), color-stop(100%, #ffc043));
+  background: -webkit-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -o-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -ms-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: linear-gradient(to right, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15dcff', endColorstr='#ffc043', GradientType=1);
+  position: fixed;
+  visibility: visible;
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+.dialog .dialogInner {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: #18C5E7;
+  position: relative;
+}
+.dialog .dialogInner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url('../img/bg/bg_newsletter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}
+.dialog .dialogInner .dialogCloseBtn {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 2rem;
+  position: absolute;
+  right: 15px;
+  top: -20px;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 150ms ease;
+  z-index: 99;
+}
+.dialog .dialogInner .dialogTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 30px 0 15px 0;
+  color: #ffffff;
+}
+.dialog .dialogInner .dialogContent {
+  font-size: 16px;
+  line-height: 1.6rem;
+  color: #ffffff;
+  font-weight: 200;
+}
+.dialog .dialogInner .form-control {
+  background: transparent;
+  font-size: 14px;
+  color: #ffffff;
+  height: 50px;
+  border-radius: 0;
+  font-weight: 300;
+}
+.dialog .dialogInner .form-control.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  background: transparent;
+  margin-bottom: 10px;
+}
+.dialog .dialogInner .form-control:focus {
+  border-radius: 0;
+}
+.dialog .dialogInner .form-control::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+}
+.dialog .dialogInner .form-control:-moz-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+}
+.dialog .dialogInner .form-control::-moz-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+}
+.dialog span {
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: 300;
+  padding-left: 0;
+}
+.dialog span i {
+  padding-right: 10px;
+}
+.dialog .alert {
+  color: #ff5988;
+}
+.dialog .success {
+  color: #ffffff;
+}
+.dialog .errorInput {
+  border: 1px solid #ff5988 !important;
+}
+.dialog.dialog--active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+  transition: all 500 ease-out;
+  z-index: 999999;
+}
+@media (max-width: 600px) {
+  .dialog {
+    width: 90%;
+    left: calc(45%);
+  }
+}
+.dialogBack {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  filter: blur(8px);
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+/* --------------------------------
+    6. GOOGLEMAP
+-------------------------------- */
+.mapOuter {
+  height: 426px;
+  background: #ffffff;
+  z-index: 99999999;
+  position: relative;
+  padding: 3px 0;
+  background: #15dcff;
+  background: -moz-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #15dcff), color-stop(51%, #ff5988), color-stop(100%, #ffc043));
+  background: -webkit-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -o-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -ms-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: linear-gradient(to right, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15dcff', endColorstr='#ffc043', GradientType=1);
+}
+.mapOuter #map {
+  height: 420px;
+}
+/* --------------------------------
+    7. CONTACT PAGE
+-------------------------------- */
+.contactPage .contact-info {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+.contactPage .contact-info .contact-item .divider {
+  height: 1px;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.contactPage .contact-info .contact-item span {
+  margin-left: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+.contactPage .contact-info .contact-item span i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+}
+.contactPage .contact-info .contact-item p {
+  padding-top: 0 !important;
+  margin-bottom: 0;
+}
+.contactPage .contact-info .contact-item a,
+.contactPage .contact-info .contact-item p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #18C5E7;
+}
+.contactPage .contact-info .contact-item a:hover {
+  text-decoration: none;
+  font-weight: 400;
+}
+/* --------------------------------
+    8. BOTTOM SOCIAL MEDIA
+-------------------------------- */
+.contactPage .social-media {
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+.contactPage .social-media li a {
+  color: #424242;
+  font-size: 18px;
+  display: block;
+  transition: color 1s ease;
+}
+.contactPage .social-media li a .tooltip-inner {
+  background: #18C5E7;
+}
+.contactPage .social-media li a .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+  border: none;
+}
+.contactPage .social-media li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* --------------------------------
+    9. CONTACT FORM
+-------------------------------- */
+.contact-form {
+  position: relative;
+  text-align: center;
+}
+.contact-form .form-control {
+  margin-bottom: .75em;
+  padding: .75em 12px;
+  background-color: #f7f7f7;
+  box-shadow: none;
+  height: 50px;
+  font-weight: 500;
+  border-radius: 0;
+  font-size: 12px;
+  color: #191919;
+}
+.contact-form .form-control:-moz-placeholder {
+  font-weight: 300;
+  font-size: 12px;
+  color: #191919;
+}
+.contact-form .form-control:-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 12px;
+  color: #191919;
+}
+.contact-form .form-control:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 12px;
+  color: #191919;
+}
+.contact-form label {
+  display: block;
+}
+.contact-form label.error {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #ff5988;
+}
+.contact-form label.error i {
+  padding-right: 8px;
+}
+.contact-form textarea {
+  min-height: 160px;
+}
+.contact-form .btn-contact {
+  background: #f7f7f7;
+  border-color: #cfcfcf;
+  color: #18C5E7;
+  font-weight: 700;
+  height: 40px;
+  padding: 0 90px;
+  font-size: 17px;
+}
+.contact-form .btn-contact:hover,
+.contact-form .btn-contact:focus {
+  background: #e8e8e8;
+  color: #4d4d4d;
+}
+.contact-form .successForm,
+.contact-form .errorForm {
+  display: none;
+}
+.contact-form .successForm p,
+.contact-form .errorForm p {
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: .75em;
+}
+.contact-form .successForm p {
+  background: rgba(39, 174, 96, 0.7);
+}
+.contact-form .errorForm p {
+  background: rgba(231, 76, 60, 0.7);
+}
+/* --------------------------------
+    10. BACK TO TOP BUTTON
+-------------------------------- */
+a#back-top {
+  position: fixed;
+  display: block;
+  font-size: 30px;
+  bottom: 15px;
+  right: 15px;
+  width: auto;
+  z-index: 99999999;
+  text-decoration: none;
+}
+a#back-top:active {
+  background: none;
+}
+a#back-top i {
+  display: block;
+}
+/* --------------------------------
+    11. TOP SOCIAL MEDIA LINKS
+-------------------------------- */
+ul.social-media {
+  padding-top: 10px;
+  list-style: none;
+  text-align: right;
+}
+ul.social-media li {
+  display: inline-block;
+  padding-left: 16px;
+}
+ul.social-media li a {
+  color: #ebebeb;
+  font-size: 16px;
+  display: block;
+  transition: color 1s ease;
+}
+.tooltip .tooltip-inner {
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner {
+  background: rgba(21, 220, 255, 0.2);
+  background: -moz-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(21, 220, 255, 0.2)), color-stop(51%, rgba(255, 89, 136, 0.2)), color-stop(100%, rgba(255, 192, 67, 0.2)));
+  background: -webkit-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: -o-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: -ms-linear-gradient(left, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  background: linear-gradient(to right, rgba(21, 220, 255, 0.2) 0%, rgba(255, 89, 136, 0.2) 51%, rgba(255, 192, 67, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15dcff', endColorstr='#ffc043', GradientType=1);
+}
+.tooltip.bs-tether-element-attached-top .tooltip-inner::after,
+.tooltip.bs-tether-element-attached-top .tooltip-inner::before,
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner::after,
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+  display: none;
+}
+/* --------------------------------
+    12. TEXT ANIMATION
+-------------------------------- */
+.headline {
+  margin-top: 10px;
+  color: #ffffff;
+}
+.headline .animated-words {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.headline .animated-words b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.headline .animated-words b.is-visible {
+  position: relative;
+}
+.headline.loading-bar span {
+  display: inline-block;
+  padding: .2em 0;
+}
+.headline.loading-bar .animated-words {
+  overflow: hidden;
+  vertical-align: top;
+}
+.headline.loading-bar .animated-words::after {
+  /* loading bar */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #fff;
+/*  background: -moz-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #15dcff), color-stop(51%, #ff5988), color-stop(100%, #ffc043));
+  background: -webkit-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -o-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: -ms-linear-gradient(left, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  background: linear-gradient(to right, #15dcff 0%, #ff5988 51%, #ffc043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15dcff', endColorstr='#ffc043', GradientType=1);*/
+  z-index: 2;
+  -webkit-transition: width 0.3s -0.1s;
+  -moz-transition: width 0.3s -0.1s;
+  transition: width 0.3s -0.1s;
+}
+.headline.loading-bar .animated-words.is-loading::after {
+  width: 100%;
+  -webkit-transition: width 3s;
+  -moz-transition: width 3s;
+  transition: width 3s;
+}
+.headline.loading-bar .animated-words b {
+  opacity: 0;
+}
+.headline.loading-bar .animated-words b.is-visible {
+  opacity: 1;
+}
+.headline.loading-bar b {
+  top: .2em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.headline.loading-bar b.is-visible {
+  opacity: 1;
+  top: 0;
+}
+/* --------------------------------
+    13. SPINNER - LOADING ANIMATION
+-------------------------------- */
+.loading-page {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  background: #18C5E7;
+  position: fixed;
+  overflow: hidden;
+  z-index: 99999999999;
+}
+.loading-page svg {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.loading-page #wave {
+  stroke-dasharray: 0 16 101 16;
+  -webkit-animation: moveTheWave 2400ms linear infinite;
+  animation: moveTheWave 2400ms linear infinite;
+}
+@-webkit-keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    -webkit-transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
+  }
+}
+@keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    -webkit-transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
+  }
+}
+/* --------------------------------
+    14. OVERLAY SETTINGS
+-------------------------------- */
+.overlay-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+/* 14.1. Overlay None */
+.overlay-bg[bg-type="none"] {
+  display: none;
+}
+/* 14.2. Overlay - Color */
+/*.overlay-bg[bg-type="color"] {
+  background: rgba(20, 20, 20, 0.82);
+}*/
+/* 14.3. Overlay - Gradient */
+.overlay-bg[bg-type="gradient"] {
+  background: #096d62;
+  background: -moz-linear-gradient(-45deg, #096d62 0%, #8e3160 50%, #a3752c 100%);
+  background: -webkit-linear-gradient(-45deg, #096d62 0%, #8e3160 50%, #a3752c 100%);
+  background: linear-gradient(135deg, #096d62 0%, #8e3160 50%, #a3752c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#096d62', endColorstr='#a3752c', GradientType=1);
+  opacity: 0.9;
+}
+/* 14.4. Overlay - Dotted */
+.overlay-bg[bg-type="dotted"] {
+  background: rgba(44, 38, 66, 0.8) url("../img/overlay.png") repeat;
+}
+/* --------------------------------
+    15. COLOR SETTINGS
+-------------------------------- */
+/* 15.1. Blue */
+body[theme-color="blue"] .btnGradient {
+  border: 1px solid rgba(21, 220, 255, 0.2);
+}
+body[theme-color="blue"] .cutter,
+body[theme-color="blue"] .contactPage .contact-info .contact-item .divider,
+body[theme-color="blue"] .tooltip.bs-tether-element-attached-top .tooltip-inner {
+  background: #15dcff;
+}
+body[theme-color="blue"] a#back-top,
+body[theme-color="blue"] ul.countdown li:first-child span,
+body[theme-color="blue"] ul.countdown li:first-child p,
+body[theme-color="blue"] .dialog .dialogInner .dialogCloseBtn:hover,
+body[theme-color="blue"] ul.social-media li a:hover,
+body[theme-color="blue"] .headline .animated-words b {
+  color: #15dcff;
+}
+body[theme-color="blue"] .dialog .dialogInner .form-control.input {
+  border: 1px solid rgba(21, 220, 255, 0.4);
+}
+body[theme-color="blue"] .dialog .dialogInner .form-control:focus {
+  border-color: rgba(21, 220, 255, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.007) inset, 0 0 8px rgba(21, 220, 255, 0.6);
+}
+body[theme-color="blue"] .dialog .clearInput {
+  border: 1px solid rgba(21, 220, 255, 0.8) !important;
+}
+body[theme-color="blue"] .contactPage .social-media li a .tooltip-inner,
+body[theme-color="blue"] .tooltip .tooltip-inner {
+  border: 1px solid rgba(21, 220, 255, 0.2);
+}
+body[theme-color="blue"] .contact-form .form-control {
+  border: 1px solid #15dcff;
+}
+body[theme-color="blue"] .contact-form .form-control:focus {
+  border-color: rgba(21, 220, 255, 0.8);
+  box-shadow: 0 1px 1px #fdfdfd inset, 0 0 8px rgba(21, 220, 255, 0.6);
+}
+body[theme-color="blue"] .loading-page svg {
+  border: 4px solid #15dcff;
+}
+body[theme-color="blue"] .loading-page #wave {
+  stroke: #15dcff;
+}
+/* 15.2 Red */
+body[theme-color="red"] .btnGradient {
+  border: 1px solid rgba(255, 89, 136, 0.2);
+}
+body[theme-color="red"] .cutter,
+body[theme-color="red"] .contactPage .contact-info .contact-item .divider,
+body[theme-color="red"] .tooltip.bs-tether-element-attached-top .tooltip-inner {
+  background: #ff5988;
+}
+body[theme-color="red"] a#back-top,
+body[theme-color="red"] ul.countdown li:first-child span,
+body[theme-color="red"] ul.countdown li:first-child p,
+body[theme-color="red"] .dialog .dialogInner .dialogCloseBtn:hover,
+body[theme-color="red"] ul.social-media li a:hover,
+body[theme-color="red"] .headline .animated-words b {
+  color: #ff5988;
+}
+body[theme-color="red"] .dialog .dialogInner .form-control.input {
+  border: 1px solid rgba(255, 89, 136, 0.4);
+}
+body[theme-color="red"] .dialog .dialogInner .form-control:focus {
+  border-color: rgba(255, 89, 136, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.007) inset, 0 0 8px rgba(255, 89, 136, 0.6);
+}
+body[theme-color="red"] .dialog .clearInput {
+  border: 1px solid rgba(255, 89, 136, 0.8) !important;
+}
+body[theme-color="red"] .contactPage .social-media li a .tooltip-inner,
+body[theme-color="red"] .tooltip .tooltip-inner {
+  border: 1px solid rgba(255, 89, 136, 0.2);
+}
+body[theme-color="red"] .contact-form .form-control {
+  border: 1px solid #ff5988;
+}
+body[theme-color="red"] .contact-form .form-control:focus {
+  border-color: rgba(255, 89, 136, 0.8);
+  box-shadow: 0 1px 1px #fdfdfd inset, 0 0 8px rgba(255, 89, 136, 0.6);
+}
+body[theme-color="red"] .loading-page svg {
+  border: 4px solid #ff5988;
+}
+body[theme-color="red"] .loading-page #wave {
+  stroke: #ff5988;
+}
+/* 15.3. Green */
+body[theme-color="green"] .btnGradient {
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+body[theme-color="green"] .cutter,
+body[theme-color="green"] .contactPage .contact-info .contact-item .divider,
+body[theme-color="green"] .tooltip.bs-tether-element-attached-top .tooltip-inner {
+  background: #2ecc71;
+}
+body[theme-color="green"] a#back-top,
+body[theme-color="green"] ul.countdown li:first-child span,
+body[theme-color="green"] ul.countdown li:first-child p,
+body[theme-color="green"] .dialog .dialogInner .dialogCloseBtn:hover,
+body[theme-color="green"] ul.social-media li a:hover,
+body[theme-color="green"] .headline .animated-words b {
+  color: #2ecc71;
+}
+body[theme-color="green"] .dialog .dialogInner .form-control.input {
+  border: 1px solid rgba(46, 204, 113, 0.4);
+}
+body[theme-color="green"] .dialog .dialogInner .form-control:focus {
+  border-color: rgba(46, 204, 113, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.007) inset, 0 0 8px rgba(46, 204, 113, 0.6);
+}
+body[theme-color="green"] .dialog .clearInput {
+  border: 1px solid rgba(46, 204, 113, 0.8) !important;
+}
+body[theme-color="green"] .contactPage .social-media li a .tooltip-inner,
+body[theme-color="green"] .tooltip .tooltip-inner {
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+body[theme-color="green"] .contact-form .form-control {
+  border: 1px solid #2ecc71;
+}
+body[theme-color="green"] .contact-form .form-control:focus {
+  border-color: rgba(46, 204, 113, 0.8);
+  box-shadow: 0 1px 1px #fdfdfd inset, 0 0 8px rgba(46, 204, 113, 0.6);
+}
+body[theme-color="green"] .loading-page svg {
+  border: 4px solid #2ecc71;
+}
+body[theme-color="green"] .loading-page #wave {
+  stroke: #2ecc71;
+}
+/* 15.4. Yellow */
+body[theme-color="yellow"] .btnGradient {
+  border: 1px solid rgba(255, 192, 67, 0.2);
+}
+body[theme-color="yellow"] .cutter,
+body[theme-color="yellow"] .contactPage .contact-info .contact-item .divider,
+body[theme-color="yellow"] .tooltip.bs-tether-element-attached-top .tooltip-inner {
+  background: #ffc043;
+}
+body[theme-color="yellow"] a#back-top,
+body[theme-color="yellow"] ul.countdown li:first-child span,
+body[theme-color="yellow"] ul.countdown li:first-child p,
+body[theme-color="yellow"] .dialog .dialogInner .dialogCloseBtn:hover,
+body[theme-color="yellow"] ul.social-media li a:hover,
+body[theme-color="yellow"] .headline .animated-words b {
+  color: #ffc043;
+}
+body[theme-color="yellow"] .dialog .dialogInner .form-control.input {
+  border: 1px solid rgba(255, 192, 67, 0.4);
+}
+body[theme-color="yellow"] .dialog .dialogInner .form-control:focus {
+  border-color: rgba(255, 192, 67, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.007) inset, 0 0 8px rgba(255, 192, 67, 0.6);
+}
+body[theme-color="yellow"] .dialog .clearInput {
+  border: 1px solid rgba(255, 192, 67, 0.8) !important;
+}
+body[theme-color="yellow"] .contactPage .social-media li a .tooltip-inner,
+body[theme-color="yellow"] .tooltip .tooltip-inner {
+  border: 1px solid rgba(255, 192, 67, 0.2);
+}
+body[theme-color="yellow"] .contact-form .form-control {
+  border: 1px solid #ffc043;
+}
+body[theme-color="yellow"] .contact-form .form-control:focus {
+  border-color: rgba(255, 192, 67, 0.8);
+  box-shadow: 0 1px 1px #fdfdfd inset, 0 0 8px rgba(255, 192, 67, 0.6);
+}
+body[theme-color="yellow"] .loading-page svg {
+  border: 4px solid #ffc043;
+}
+body[theme-color="yellow"] .loading-page #wave {
+  stroke: #ffc043;
+}
+/* 15.5. Purple */
+body[theme-color="purple"] .btnGradient {
+  border: 1px solid rgba(190, 66, 236, 0.2);
+}
+body[theme-color="purple"] .cutter,
+body[theme-color="purple"] .contactPage .contact-info .contact-item .divider,
+body[theme-color="purple"] .tooltip.bs-tether-element-attached-top .tooltip-inner {
+  background: #be42ec;
+}
+body[theme-color="purple"] a#back-top,
+body[theme-color="purple"] ul.countdown li:first-child span,
+body[theme-color="purple"] ul.countdown li:first-child p,
+body[theme-color="purple"] .dialog .dialogInner .dialogCloseBtn:hover,
+body[theme-color="purple"] ul.social-media li a:hover,
+body[theme-color="purple"] .headline .animated-words b {
+  color: #be42ec;
+}
+body[theme-color="purple"] .dialog .dialogInner .form-control.input {
+  border: 1px solid rgba(190, 66, 236, 0.4);
+}
+body[theme-color="purple"] .dialog .dialogInner .form-control:focus {
+  border-color: rgba(190, 66, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.007) inset, 0 0 8px rgba(190, 66, 236, 0.6);
+}
+body[theme-color="purple"] .dialog .clearInput {
+  border: 1px solid rgba(190, 66, 236, 0.8) !important;
+}
+body[theme-color="purple"] .contactPage .social-media li a .tooltip-inner,
+body[theme-color="purple"] .tooltip .tooltip-inner {
+  border: 1px solid rgba(190, 66, 236, 0.2);
+}
+body[theme-color="purple"] .contact-form .form-control {
+  border: 1px solid #be42ec;
+}
+body[theme-color="purple"] .contact-form .form-control:focus {
+  border-color: rgba(190, 66, 236, 0.8);
+  box-shadow: 0 1px 1px #fdfdfd inset, 0 0 8px rgba(190, 66, 236, 0.6);
+}
+body[theme-color="purple"] .loading-page svg {
+  border: 4px solid #be42ec;
+}
+body[theme-color="purple"] .loading-page #wave {
+  stroke: #be42ec;
+}
+/* 15.6. Orange */
+body[theme-color="orange"] .btnGradient {
+  border: 1px solid rgba(241, 96, 0, 0.2);
+}
+body[theme-color="orange"] .cutter,
+body[theme-color="orange"] .contactPage .contact-info .contact-item .divider,
+body[theme-color="orange"] .tooltip.bs-tether-element-attached-top .tooltip-inner {
+  background: #f16000;
+}
+body[theme-color="orange"] a#back-top,
+body[theme-color="orange"] ul.countdown li:first-child span,
+body[theme-color="orange"] ul.countdown li:first-child p,
+body[theme-color="orange"] .dialog .dialogInner .dialogCloseBtn:hover,
+body[theme-color="orange"] ul.social-media li a:hover,
+body[theme-color="orange"] .headline .animated-words b {
+  color: #f16000;
+}
+body[theme-color="orange"] .dialog .dialogInner .form-control.input {
+  border: 1px solid rgba(241, 96, 0, 0.4);
+}
+body[theme-color="orange"] .dialog .dialogInner .form-control:focus {
+  border-color: rgba(241, 96, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.007) inset, 0 0 8px rgba(241, 96, 0, 0.6);
+}
+body[theme-color="orange"] .dialog .clearInput {
+  border: 1px solid rgba(241, 96, 0, 0.8) !important;
+}
+body[theme-color="orange"] .contactPage .social-media li a .tooltip-inner,
+body[theme-color="orange"] .tooltip .tooltip-inner {
+  border: 1px solid rgba(241, 96, 0, 0.2);
+}
+body[theme-color="orange"] .contact-form .form-control {
+  border: 1px solid #f16000;
+}
+body[theme-color="orange"] .contact-form .form-control:focus {
+  border-color: rgba(241, 96, 0, 0.8);
+  box-shadow: 0 1px 1px #fdfdfd inset, 0 0 8px rgba(241, 96, 0, 0.6);
+}
+body[theme-color="orange"] .loading-page svg {
+  border: 4px solid #f16000;
+}
+body[theme-color="orange"] .loading-page #wave {
+  stroke: #f16000;
+}
+/* --------------------------------
+    16. RESPONSIVE STYLES
+-------------------------------- */
+@media only screen and (max-width: 768px) {
+  canvas {
+    display: none;
+  }
+  .btn {
+    font-size: 10px;
+    display: inherit;
+  }
+  #homePage .content .contentInner h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  #homePage header {
+    margin-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    top: 10px;
+  }
+  #homePage header ul.social-media {
+    margin-top: 30px;
+    text-align: center;
+    padding-left: 0;
+  }
+  #homePage header ul.social-media li:first-child {
+    padding-left: 0;
+  }
+  #homePage .content .contentInner {
+    margin-top: 50px;
+  }
+  #homePage .content .contentInner .buttons {
+    margin-top: 50px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  ul.countdown {
+    text-align: center;
+    margin-top: 20px;
+  }
+  ul.countdown li {
+    padding: 6px;
+  }
+  ul.countdown li span {
+    font-size: 20px;
+  }
+  ul.countdown li:first-child {
+    padding-left: 0;
+  }
+  ul.countdown li:first-child p {
+    font-weight: 300;
+    font-size: 13px;
+  }
+  ul.countdown li:first-child span {
+    font-size: 20px;
+  }
+  ul.countdown p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #homePage .content .contentInner h3,
+  #homePage .content .contentInner p.description {
+    text-align: center;
+    margin-top: 0;
+  }
+  #homePage .content .contentInner p.description {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  ul.social-media {
+    text-align: center;
+    margin-top: 10px;
+  }
+  section p {
+    padding-top: 0;
+  }
+  section h5 {
+    padding-top: 0;
+  }
+  section [class^='col-'] {
+    padding-bottom: 20px;
+  }
+  .contact-item .divider {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  ul.countdown li {
+    padding: 18px;
+  }
+  ul.countdown li span {
+    font-size: 45px;
+    font-weight: 600;
+  }
+  ul.countdown li:first-child {
+    padding-left: 0;
+  }
+  ul.countdown li:first-child p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  ul.countdown li:first-child span {
+    font-size: 45px;
+    font-weight: 800;
+  }
+  ul.countdown p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #homePage .content .contentInner h3 {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .headline.loading-bar .animated-words b {
+    font-weight: 400;
+  }
+  ul.social-media li a {
+    font-size: 20px;
+  }
+  #homePage .content .buttons a {
+    margin-right: 40px;
+    margin: 0 auto;
+  }
+  .btn {
+    font-size: 15px;
+  }
+}
+#styleSelector {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: -250px;
+  z-index: 9999999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#styleSelector.open {
+  background: #ffffff;
+  right: 0;
+}
+.selector-toggle {
+  position: relative;
+}
+.selector-toggle > a {
+  border: 1px solid #e9e9e9;
+  border-right: 0;
+  position: absolute;
+  margin-top: 300px;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  background: #FFF;
+  color: #9c9c9c;
+}
+.selector-toggle > a > i {
+  font-size: 26px;
+  line-height: 48px;
+  margin-left: 7px;
+  background: -webkit-linear-gradient(#5B21BC, #ee6d66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#styleSelector ul {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#styleSelector ul li {
+  border-bottom: 0px solid #e9e9e9;
+  display: block;
+  margin: 0;
+  padding: 0px 5px 3
+    0px 5px;
+  text-align: center;
+  width: 100%;
+}
+#styleSelector ul li:first-child {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9f8fa3+1,ffffff+100,7db9e8+100 */
+  background: #9f8fa3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #9f8fa3 1%, #ffffff 100%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9f8fa3 1%, #ffffff 100%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9f8fa3 1%, #ffffff 100%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9f8fa3', endColorstr='#7db9e8', GradientType=0);
+  /* IE6-9 */
+}
+#styleSelector ul li p.selector-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 6px;
+  padding-top: 32px;
+  text-align: center;
+  line-height: 36px;
+  color: #18C5E7;
+}
+#styleSelector > ul > li > .sub-title {
+  color: #18C5E7;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 6px 2px;
+  position: relative;
+}
+.leftpanel-effect > .checkbox,
+.leftpanel-effect > .radio {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0 10px;
+  position: relative;
+}
+#styleSelector li {
+  padding: 5px;
+}
+.theme-option {
+  text-align: center;
+}
+.theme-option select {
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 13px;
+}
+#styleSelector .btn {
+  margin-top: 10px;
+  height: 28px;
+  font-size: 9px;
+}
+@-moz-document url-prefix() {
+  .theme-option select {
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 3px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .theme-option select.minimal {
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, gray 50%), -webkit-linear-gradient(315deg, gray 50%, transparent 50%), -webkit-linear-gradient(left, #ccc, #ccc);
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(82%) calc(0em), calc(87%) calc(0em), calc(97.5%) 4px;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  .theme-option select.minimal:focus,
+  .theme-option select.minimal:active {
+    background-image: -webkit-linear-gradient(45deg, gray 50%, transparent 50%), -webkit-linear-gradient(315deg, transparent 50%, gray 50%), -webkit-linear-gradient(left, gray, gray);
+    background-image: linear-gradient(45deg, gray 50%, transparent 50%), linear-gradient(135deg, transparent 50%, gray 50%), linear-gradient(to right, gray, gray);
+    background-position: calc(85%) 13px, calc(80%) 13px, calc(97.5%) 0.3em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: #66afe9;
+    outline: 0;
+  }
+}
+#theme-color,
+#overlayType {
+  padding: 0px 10px;
+  width: 100%;
+  text-align: center;
+}
+/**/
+#theme-color a {
+  cursor: pointer;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  margin: 0px;
+  border-radius: 11px;
+}
+#overlayType a {
+  cursor: pointer;
+  display: inline-block;
+  height: 28px;
+  width: 44px;
+  margin: 0px;
+  color: #ffffff;
+  border-radius: 14px;
+}
+#overlayType a:hover,
+#overlayType a:hover,
+#theme-color a:hover,
+#theme-color a:focus {
+  text-decoration: none;
+}
+#theme-color a[theme-color="blue"] {
+  background: #15dcff;
+}
+#theme-color a[theme-color="red"] {
+  background: #ff5988;
+}
+#theme-color a[theme-color="yellow"] {
+  background: #ffc043;
+}
+#theme-color a[theme-color="purple"] {
+  background: #be42ec;
+}
+#theme-color a[theme-color="orange"] {
+  background: #f16000;
+}
+/********************/
+#overlayType a[bg-type="color"] {
+  background: rgba(20, 20, 20, 0.82);
+}
+#overlayType a[bg-type="dotted"] {
+  background: rgba(44, 38, 66, 0.8) url("../img/overlay.png") repeat;
+}
+#overlayType a[bg-type="gradient"] {
+  background: #096d62;
+  background: -moz-linear-gradient(-45deg, #096d62 0%, #8e3160 50%, #a3752c 100%);
+  background: -webkit-linear-gradient(-45deg, #096d62 0%, #8e3160 50%, #a3752c 100%);
+  background: linear-gradient(135deg, #096d62 0%, #8e3160 50%, #a3752c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#096d62', endColorstr='#a3752c', GradientType=1);
+  opacity: 0.9;
+}
+#overlayType a[bg-type="none"] {
+  background: none;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #0d0d0d;
+  -moz-box-shadow: inset 0px 0px 0px 1px #0d0d0d;
+  box-shadow: inset 0px 0px 0px 1px #0d0d0d;
+}
+label.dropdown select {
+  padding: 10px 42px 10px 10px;
+  background: #f8f8f8;
+  color: #444;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+label.dropdown select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #444;
+}
+label.dropdown select::-ms-expand {
+  display: none;
+}
+label.dropdown:before {
+  content: '';
+  right: 5px;
+  top: -7px;
+  width: 30px;
+  height: 33px;
+  background: #f8f8f8;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+label.dropdown {
+  position: relative;
+}
+label.dropdown:after {
+  content: '>';
+  font: 16px Consolas, monospace;
+  color: #444;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 2px;
+  top: -3px;
+  border-bottom: 1px solid #aaa;
+  position: absolute;
+  pointer-events: none;
+  width: 34px;
+  padding: 0 0 5px 0;
+  text-indent: 14px;
+}
+@media screen and (min--moz-device-pixel-ratio: 0) {
+  label.dropdown select {
+    padding-right: 40px;
+  }
+  label.dropdown:before {
+    right: 6px;
+  }
+  label.dropdown:after {
+    text-indent: 14px;
+    right: 6px;
+    top: -5px;
+    width: 36px;
+  }
+}
+/*# sourceMappingURL=theme/dist/css/map.css.map */
